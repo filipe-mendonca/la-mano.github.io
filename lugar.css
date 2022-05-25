@@ -1,0 +1,58 @@
+.lugar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.lugar img {
+  width: 600px;
+  height: 534px;
+  object-fit: cover;
+  margin: 0px;
+}
+
+.lugar-texto {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #EBDD85;
+  gap: 40px;
+}
+
+.lugar-texto h2 {
+  font-family: 'patrick hand sc', cursive;
+  font-weight: 200;
+  line-height: 1;
+  font-size: 3.5rem;
+  margin: 150px auto 0px auto;
+}
+
+.lugar-texto p {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  .lugar-texto h2{
+    font-size: 2.5rem;
+  }
+  .lugar-texto p {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .lugar {
+    grid-template-columns: 1fr;
+  }
+  .lugar img {
+    height: 200px;
+  }
+  .lugar h2 {
+    margin-top: 50px;
+  }
+  .lugar-texto p {
+    margin-bottom: 50px;
+  }
+}

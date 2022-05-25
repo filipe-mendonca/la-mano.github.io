@@ -1,0 +1,81 @@
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #FEFAE0;
+}
+
+.menu h2 {
+  grid-column: 1/-1;
+  text-align: center;
+  font-family: 'patrick hand sc', cursive;
+  font-weight: 200;
+  line-height: 1;
+  font-size: 3.5rem;
+  margin: 60px auto 30px auto;
+}
+
+.menu ul { 
+  padding: 30px;
+  background: #FEFAE0;
+  margin: 15px;
+  border: 3px solid #160F0F;
+  border-radius: 3px;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.75);
+}
+
+.menu h4 {
+  grid-column: 1/-1;
+  text-align: center;
+  font-family: 'patrick hand sc', cursive;
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.menu li {
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+  margin-bottom: 15px;
+}
+
+.menu-nome {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.menu-preco {
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+.menu-info {
+  font-size: 0.8rem;
+}
+
+.principais ul {
+  background: #EBDD85;
+}
+
+.menu img {
+  grid-column: 1/-1;
+  width: 1200px;
+  object-fit: cover;
+  margin-top: 60px;
+}
+
+@media(max-width:800px){
+  .menu {
+    grid-template-columns: 1fr;
+  }
+  .menu h2{
+    font-size: 2.5rem;
+  }
+
+  .menu img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+}

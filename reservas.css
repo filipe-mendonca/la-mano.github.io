@@ -1,0 +1,40 @@
+.reservas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0px;
+  justify-items: center;
+  align-items: center;
+  background: #FEFAE0;
+}
+
+.reservas h2 {
+  font-family: 'patrick hand sc', cursive;
+  font-weight: 200;
+  line-height: 1;
+  font-size: 3.5rem;
+  color: #160F0F;
+}
+
+.reservas p {
+  color: #4B4343;
+  margin: 20px 0px;
+}
+
+.cartoes {
+  max-width: 230px;
+}
+
+.reservas span {
+  font-size: 0.8rem;
+  line-height: 3.5;
+}
+
+@media(max-width:800px) {
+  .reservas {
+   grid-template-columns: 1fr;
+  }
+
+
+}

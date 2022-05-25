@@ -1,0 +1,23 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background: #160F0F;
+  font-family: 'roboto slab', Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+h1, h2, h3, h4, p {
+  margin: 0px;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
