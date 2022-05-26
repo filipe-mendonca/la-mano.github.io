@@ -1,0 +1,72 @@
+.comida {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.comida img {
+  grid-column: 1/-1;
+  width: 1200px;
+  object-fit: cover;
+  margin: 0px;
+}
+
+.comida-titulo {
+  background: #FEFDF3;
+}
+
+.comida-titulo h1 {
+  font-family: 'patrick hand sc', cursive;
+  font-weight: 200;
+  line-height: 1;
+  font-size: 3.5rem;
+  padding: 0 60px;
+  margin: 100px auto;
+  justify-self: center;
+}
+
+.comida-texto p {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.comida-texto {
+  padding: 80px 0;
+  background: #FEFAE0;
+}
+
+@media (max-width: 1000px) {
+  .comida-titulo h1 {
+    font-size: 2.5rem;
+  }
+  .comida-texto p {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .comida {
+    grid-template-columns: 1fr;
+  }
+
+  .comida img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .comida h1 {
+    margin: 60px 0px 20px 0px;
+    text-align: center;
+  }
+  
+  .comida-texto {
+    padding: 0px;
+  }
+
+  .comida-texto p {
+    max-width: 500px;
+    margin: 20px 60px 60px 60px;
+    text-align: center;
+  }
+}

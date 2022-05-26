@@ -1,0 +1,80 @@
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.introducao img {
+  width: 600px;
+  height: 534px;
+  object-fit: cover;
+  margin: 0px;
+  z-index: -1;
+}
+
+.introducao-texto {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #FEFAE0;
+  gap: 40px;
+}
+
+.introducao h1 {
+  font-family: 'patrick hand sc', cursive;
+  font-weight: 200;
+  line-height: 1;
+  font-size: 3.5rem;
+  margin: 100px auto 0px auto;
+}
+
+/* .introducao h1::after {
+  display: block;
+  position: absolute;
+  left: 270px;
+  top: 207px;
+} */
+
+.introducao p {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.introducao a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'patrick hand sc', cursive;
+  font-size: 1.25rem;
+  color: #160F0F;
+  padding: 15px 30px;
+  border: 2px solid #160F0F;
+  border-radius: 3px;
+  background: #DDA15E;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.75);
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  .introducao h1 {
+    font-size: 2.5rem;
+  }
+  .introducao p {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .introducao img {
+    height: 200px;
+  }
+  .introducao h1 {
+    margin-top: 50px;
+  }
+  .introducao-texto {
+    height: 490px;
+  }
+}

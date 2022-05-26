@@ -1,0 +1,11 @@
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #160F0F;
+  padding: 40px 0;
+}
+
+.footer p {
+  text-align: center;
+  color: #FEFDF3;
+}
